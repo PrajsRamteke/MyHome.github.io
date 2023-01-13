@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+*{
+    font-family: 'Poppins';
+}
+.section-padding{
+    padding: 100Px 0;
+}
+ html{
+    scroll-behavior: smooth;
+ }
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+}
+.carousel-caption{
+    bottom: 220px;
+    z-index: 2;
+}
+.carousel-caption h5{
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+.carousel-caption p{
+    margin: auto;
+    width: 60%;
+    line-height: 1.9;
+    font-size: 18px;
+}
+.carousel-inner::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+.btn-warning{margin-top: 10px;}
+
+.navbar-nav li a{
+   font-size: 15px;
+   font-weight: 500;
+}
+
+.navbar-nav li a:hover{
+    color: #FFC107;
+}
+
+.navbar-brand{
+    color: black;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.nav-link{
+    color: black;
+}
+
+.card-body .lead{
+    font-weight: 200;
+    font-size: 16px;
+}
+
+.card-body i{
+    font-size: 48px;
+    padding-bottom: 16px;
+}
+.card-team i{
+    font-size: 20px;
+    padding: 6px 6px 30px 6px;
+}
+
+/* media query */
+@media only screen and (max-width: 990px) {
+    .col-990 {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+@media only screen and (max-width: 767px) {
+    .bm {
+      margin-bottom: 1rem;
+    }
+    .section-padding {
+        padding: 40Px 0;
+    }
+    /* now home page */
+    .navbar-nav{
+        text-align: center;
+    }
+    .carousel-caption{
+        bottom: 125px;
+    }
+    .carousel-caption h5{
+        font-size: 17px;
+    }
+    .carousel-caption a{
+        padding: 10px 15px;
+    }
+    .carousel-caption p{
+        width: 100%;
+        line-height: 1.6;
+        font-size: 12px;
+    }
+
+  }
+
+.navbar-toggler:focus{
+   box-shadow: none;
+}
+
+.card:hover{
+    box-shadow: rgba(22, 22, 22, 0.4) 0px 5px 15px;
+    transition: 0.3s ease;
+}
